@@ -16,7 +16,12 @@
     </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+<!--  -->
 
+
+
+
+<!--  -->
          <!-- Begin -->
         <Annotations Target="Z_GL_JES_F_SRV.Z_GL_JES_F_SRV_Entities/ZGXX_JES_CDNAFSet">
             <Annotation Term="Capabilities.UpdateRestrictions">
@@ -122,18 +127,25 @@
                 </Annotation>
         </Annotations>
 <!-- VALUE HELP -->
-        <Annotations Target="Z_GL_JES_F_SRV.ZGXX_JES_CDNAF">
+        <Annotations Target="Z_GL_JES_F_SRV.ZGXX_JES_CDNAF/DYNA_ID">
             <Annotation Term="Common.ValueList">
                 <Record Type="Common.ValueListType">
-                    <PropertyValue Property="CollectionPath" String="DYNA_ID"/>
+                    <PropertyValue Property="CollectionPath" String="ZGXX_JES_CDNAFSet"/>
                     <PropertyValue Property="SearchSupported" Bool="true"/>
+                    <PropertyValue Property="Parameters">
+                        <Collection>
+                            <Record Type="Common.ValueListParameterInOut">
+                            <PropertyValue Property="LocalDataProperty" PropertyPath="DYNA_ID"/>
+                            <PropertyValue Property="ValueListProperty" String="DYNA_ID"/>
+                            </Record>
+                        <Record Type="Common.ValueListParameterDisplayOnly">
+                        <PropertyValue Property="ValueListProperty" String="DYNA_ID"/>
+                        </Record>
+                        </Collection>
+                    </PropertyValue>
                 </Record>
             </Annotation>
         </Annotations>
-
-
-
-
           <!-- End -->
 
         </Schema>

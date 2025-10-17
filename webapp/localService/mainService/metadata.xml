@@ -38,9 +38,21 @@
                 <Property Name="LOW" Type="Edm.String" MaxLength="60" sap:unicode="false" sap:label="Field position"/>
                 <Property Name="HIGH" Type="Edm.String" MaxLength="60" sap:unicode="false" sap:label="Field position"/>
             </EntityType>
+            <EntityType Name="ZGXX_JES_CDNAH" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="DYNA_ID"/>
+                </Key>
+                <Property Name="DYNA_ID" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="Dynamic Ass. ID" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="TX60_CDNAH" Type="Edm.String" MaxLength="60" sap:unicode="false" sap:label="Long description" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="DYNA_TYPE" Type="Edm.String" MaxLength="1" sap:unicode="false" sap:label="Dyn.Assignment Type" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="X_INACTIVE" Type="Edm.Boolean" sap:unicode="false" sap:label="Inactive" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="PRIORITY" Type="Edm.Int32" sap:unicode="false" sap:label="Dyn.Assign.Priority" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="VALUE" Type="Edm.String" MaxLength="12" sap:unicode="false" sap:label="Dyn.Assignment Value" sap:creatable="false" sap:updatable="false"/>
+            </EntityType>
             <EntityContainer Name="Z_GL_JES_F_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
                 <EntitySet Name="ZGXX_JES_CCDAFSet" EntityType="Z_GL_JES_F_SRV.ZGXX_JES_CCDAF" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
                 <EntitySet Name="ZGXX_JES_CDNAFSet" EntityType="Z_GL_JES_F_SRV.ZGXX_JES_CDNAF" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="ZGXX_JES_CDNAHSet" EntityType="Z_GL_JES_F_SRV.ZGXX_JES_CDNAH" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
             </EntityContainer>
             <Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
             <atom:link rel="self" href="http://besr4d/sap/opu/odata/sap/Z_GL_JES_F_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
