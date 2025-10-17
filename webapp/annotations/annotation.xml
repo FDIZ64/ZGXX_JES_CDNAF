@@ -126,11 +126,11 @@
                     </Record>
                 </Annotation>
         </Annotations>
-<!-- VALUE HELP -->
-        <Annotations Target="Z_GL_JES_F_SRV.ZGXX_JES_CDNAF/DYNA_ID">
+<!-- VALUE HELP DYNA_ID -->
+        <Annotations Target="Z_GL_JES_F_SRV.ZGXX_JES_CDNAH/DYNA_ID">
             <Annotation Term="Common.ValueList">
                 <Record Type="Common.ValueListType">
-                    <PropertyValue Property="CollectionPath" String="ZGXX_JES_CDNAFSet"/>
+                    <PropertyValue Property="CollectionPath" String=""/>
                     <PropertyValue Property="SearchSupported" Bool="true"/>
                     <PropertyValue Property="Parameters">
                         <Collection>
