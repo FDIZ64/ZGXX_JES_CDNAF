@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="Z_GL_JES_F_SRV" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="ZGXX_JES_CCDAF" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Jclass"/>
+                    <PropertyRef Name="Jtype"/>
+                    <PropertyRef Name="DynaType"/>
+                    <PropertyRef Name="Cnt"/>
+                    <PropertyRef Name="IcSide"/>
+                    <PropertyRef Name="FltId"/>
+                    <PropertyRef Name="FltCnt"/>
+                </Key>
+                <Property Name="Jclass" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Journal class." sap:updatable="false"/>
+                <Property Name="Jtype" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="Journal Entry type" sap:updatable="false"/>
+                <Property Name="DynaType" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Dyn.Assignment Type" sap:updatable="false"/>
+                <Property Name="Cnt" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Counter" sap:updatable="false"/>
+                <Property Name="IcSide" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Intercompany LE side" sap:updatable="false"/>
+                <Property Name="FltId" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="ID for Filter field" sap:updatable="false"/>
+                <Property Name="FltCnt" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Counter" sap:updatable="false"/>
+                <Property Name="Sign" Type="Edm.String" MaxLength="1" sap:unicode="false" sap:label="Incl./Excl."/>
+                <Property Name="Opt" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:label="Option"/>
+                <Property Name="Low" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Low"/>
+                <Property Name="High" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="High"/>
+            </EntityType>
+            <EntityType Name="ZGXX_JES_CDNAF" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="DYNA_ID"/>
+                    <PropertyRef Name="FIELD_ID"/>
+                    <PropertyRef Name="FIELD_CNT"/>
+                </Key>
+                <Property Name="DYNA_ID" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="Dynamic Ass. ID" sap:updatable="false"/>
+                <Property Name="FIELD_ID" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Field ID" sap:updatable="false"/>
+                <Property Name="FIELD_CNT" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Counter" sap:updatable="false"/>
+                <Property Name="SIGN" Type="Edm.String" MaxLength="1" sap:unicode="false" sap:label="Incl./Excl."/>
+                <Property Name="OPT" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:label="Option"/>
+                <Property Name="LOW" Type="Edm.String" MaxLength="60" sap:unicode="false" sap:label="Field position"/>
+                <Property Name="HIGH" Type="Edm.String" MaxLength="60" sap:unicode="false" sap:label="Field position"/>
+            </EntityType>
+            <EntityContainer Name="Z_GL_JES_F_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="ZGXX_JES_CCDAFSet" EntityType="Z_GL_JES_F_SRV.ZGXX_JES_CCDAF" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="ZGXX_JES_CDNAFSet" EntityType="Z_GL_JES_F_SRV.ZGXX_JES_CDNAF" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
+            <atom:link rel="self" href="http://besr4d/sap/opu/odata/sap/Z_GL_JES_F_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="http://besr4d/sap/opu/odata/sap/Z_GL_JES_F_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
