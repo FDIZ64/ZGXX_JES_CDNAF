@@ -146,6 +146,35 @@
                 </Record>
             </Annotation>
         </Annotations>
+
+
+<!--  -->
+
+<!-- VALUE HELP FIELD_ID -->
+        <!-- <Annotations Target="Z_GL_JES_F_SRV.ZGXX_JES_CDNAF/FIELD_ID">
+            <Annotation Term="Common.ValueList">
+                <Record Type="Common.ValueListType">
+                    <PropertyValue Property="CollectionPath" String=""/>
+                    <PropertyValue Property="SearchSupported" Bool="true"/>
+                    <PropertyValue Property="Parameters">
+                        <Collection>
+                            <Record Type="Common.ValueListParameterInOut">
+                            <PropertyValue Property="LocalDataProperty" PropertyPath="DYNA_ID"/>
+                            <PropertyValue Property="ValueListProperty" String="DYNA_ID"/>
+                            </Record>
+                        <Record Type="Common.ValueListParameterDisplayOnly">
+                        <PropertyValue Property="ValueListProperty" String="TX60_CDNAH"/>
+                        </Record>
+                        </Collection>
+                    </PropertyValue>
+                </Record>
+            </Annotation>
+        </Annotations> -->
+
+
+
+<!--  -->
+
           <!-- End -->
 
         </Schema>
