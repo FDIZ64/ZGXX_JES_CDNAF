@@ -139,7 +139,7 @@
                             <PropertyValue Property="ValueListProperty" String="DYNA_ID"/>
                             </Record>
                         <Record Type="Common.ValueListParameterDisplayOnly">
-                        <PropertyValue Property="ValueListProperty" String="DYNA_ID"/>
+                        <PropertyValue Property="ValueListProperty" String="TX60_CDNAH"/>
                         </Record>
                         </Collection>
                     </PropertyValue>
